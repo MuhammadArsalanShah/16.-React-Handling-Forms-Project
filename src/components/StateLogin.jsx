@@ -12,6 +12,12 @@ export default function Login() {
     event.preventDefault();
     console.log("User Email: " + enteredValues.email);
     console.log("User Password: " + enteredValues.password);
+
+    /*** To reset Form programatically ***/
+    setEnteredValues({
+      email: "",
+      password: "",
+    });
   }
 
   // function handleEmailChange(event) {
